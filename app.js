@@ -9,11 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'https://avishkar-kabadicurrencyconverter.vercel.app/'
+    origin: 'https://avishkar-kabadicurrencyconverter.vercel.app'
 }));
 
 app.use('/api', currencyRoutes);
 
 app.listen(PORT, () => {
-    console.log(`https://avishkar-kabadicurrencyconverter.vercel.app/');
+    console.log(`https://avishkar-kabadicurrencyconverter.vercel.app');
 });

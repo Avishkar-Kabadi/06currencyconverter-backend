@@ -8,12 +8,16 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// ✅ Correct CORS: no trailing slash
 app.use(cors({
-    origin: 'https://avishkar-kabadicurrencyconverter.vercel.app'
+  origin: 'https://avishkar-kabadicurrencyconverter.vercel.app'
 }));
 
+// ✅ Routes
 app.use('/api', currencyRoutes);
 
+// ✅ Fixed log message (correct quotes)
 app.listen(PORT, () => {
-    console.log(`https://avishkar-kabadicurrencyconverter.vercel.app');
+  console.log(`✅ Server running on port ${PORT}`);
+  console.log(`✅ Accepting requests from https://avishkar-kabadicurrencyconverter.vercel.app`);
 });

@@ -15,5 +15,5 @@ app.use(cors({
 app.use('/api', currencyRoutes);
 
 app.listen(PORT, () => {
-    console.log(`✅ Currency API running on http://localhost:${PORT}`);
+    console.log(`https://avishkar-kabadicurrencyconverter.vercel.app/');
 });
